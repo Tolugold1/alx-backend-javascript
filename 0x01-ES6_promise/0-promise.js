@@ -1,3 +1,4 @@
-module.exports = function getResponseFromAPI() {
-    return new Promise(() => {})
+function getResponseFromAPI() {
+    return new Promise(() => {});
 }
+module.exports = getResponseFromAPI;
