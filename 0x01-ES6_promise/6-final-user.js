@@ -14,7 +14,7 @@ export default async function handleProfileSignup(firstName, lastName, fileName)
 
     try {
         const resp1 = await signUpUser(firstName, lastName);
-        user.status = "fullfilled";
+        user.status = "fulfilled";
         user.value = resp1
     } catch (err) {
         user.status = "rejected";
@@ -23,7 +23,7 @@ export default async function handleProfileSignup(firstName, lastName, fileName)
 
     try {
         const resp2 = await uploadPhoto(fileName);
-        photo.status = "fullfilled";
+        photo.status = "fulfilled";
         photo.value = resp2;
     } catch (err) {
         photo.status = "rejected";
