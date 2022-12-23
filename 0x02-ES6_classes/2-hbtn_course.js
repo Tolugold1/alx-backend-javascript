@@ -49,12 +49,10 @@ export default class HolbertonCourse {
 
     //studentsSetter method
     set students(students) {
-        for (let i = 0; i < students.length; i++) {
-            if (students.constructor === Array && typeof students[i] === "string") {
-                this._students[i] = students[i];
-            } else {
-                throw TypeError("student must be an array of string")
-            }
+        if (students.constructor !== Array && students.every((items) => typeof items !== "string")) {
+            throw TypeError("students must be an array of string.")
+        } else {
+            this._students = students;
         }
     }
 }
