@@ -6,3 +6,7 @@ interface Teacher {
     yearsOfExperience?: number,
     contract?: any
 }
+
+interface Directors extends Teacher {
+    numberOfReports: number
+}
