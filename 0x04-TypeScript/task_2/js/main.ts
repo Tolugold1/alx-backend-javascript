@@ -40,3 +40,17 @@ function createEmployee(salary: number | string) {
     }
     return Director
 }
+
+
+function executeWork(employee: Function) {
+    if ( employee == Director ) {
+        const direc = new Director;
+        return direc.workDirectorTasks()
+    } else if ( employee == Teacher ) {
+        const teach = new Teacher;
+        return teach.workTeacherTasks()
+    }
+}
+
+console.log(executeWork(createEmployee(200)));
+console.log(executeWork(createEmployee(1000)));
