@@ -1,16 +1,16 @@
 # 0x05. NodeJS Basics
 
 # Resources
-### Read or watch:
+ Read or watch:
 
-### Node JS getting started
-### Process API doc
-### Child process
-### Express getting started
-### Mocha documentation
-### Nodemon documentation
-### Learning Objectives
-### At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+ Node JS getting started
+ Process API doc
+ Child process
+ Express getting started
+ Mocha documentation
+ Nodemon documentation
+ Learning Objectives
+ At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
 run javascript using NodeJS
 use NodeJS modules
