@@ -7,16 +7,16 @@ const countStudents = (path) => {
 
         const name_field = {}
         for (const row of dt) {
-            students = row.split(",");
+            let students = row.split(",");
             if (!name_field[students[3]]) {
                 name_field[students[3]] = []
             }
             name_field[students[3]].push(students[0]);
         }
 
-        for (let field in name_field) {
-            if (field) {
-                console.log(`Number of students in ${field}: ${name_field[field].length}. List: ${name_field[field].join(",")}`)
+        for (let key of Object.keys(name_field)) {
+            if (key) {
+                console.log(`Number of students in ${key}: ${name_field[key].length}. List: ${name_field[key].join(",")}`)
             }
         }
     } catch (error) {
