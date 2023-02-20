@@ -1,9 +1,9 @@
 # 0x05. NodeJS Basics
 
 # Resources
- Read or watch:
+ -  Read or watch:
 
- Node JS getting started
+ -  Node JS getting started
  Process API doc
  Child process
  Express getting started
