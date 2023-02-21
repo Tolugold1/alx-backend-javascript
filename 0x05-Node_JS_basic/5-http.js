@@ -1,8 +1,7 @@
 const http = require("http");
 const port = 1245;
-const host = "localhost"
 
-const app = http.createServer((req, res) => {
+const app = http.createServer(async (req, res) => {
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/plain");
     if (req.url === "/") {
@@ -10,9 +9,16 @@ const app = http.createServer((req, res) => {
     }
     if (req.url === "/students") {
         res.write("This is the list of our students\n")
+        try {
+                const data = await countStudents(process.argv[2]);
+                res.end(`${data.join('\n')}`);
+            } catch (error) {
+                res.end(error.message);
+        }
     }
+    res.end();
+
 })
 
-app.listen(port, host, () => {
-    console.log(`server running at http://${host}:${port}`)
-})
+app.listen(port);
+module.exports = app;
