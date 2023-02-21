@@ -8,5 +8,7 @@ const app = http.createServer((req, res) => {
     res.end("Hello Holberton School!")
 })
 
-app.listen(port);
+app.listen(port, host, () => {
+    console.log("listening on port:", port)
+});
 module.exports = app;
