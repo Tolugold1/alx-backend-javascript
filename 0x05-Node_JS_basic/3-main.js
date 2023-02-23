@@ -7,12 +7,12 @@ countStudents("database.csv")
         .catch((error) => {
         console.log(error);
     });
-
-/* countStudents("nope.csv")
+    
+countStudents("nope.csv")
     .then(() => {
         console.log("Done!");
     })
         .catch((error) => {
         console.log(error);
-    }); */
+    });
 console.log("After!");
