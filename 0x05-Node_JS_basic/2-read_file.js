@@ -13,10 +13,9 @@ const countStudents = (path) => {
       }
       nameField[students[3]].push(students[0]);
     }
-    console.log(nameField);
     for (const key of Object.keys(nameField)) {
       if (key) {
-        process.stdout.write(`Number of students in ${key}: ${nameField[key].length}. List: ${nameField[key].join(',')}`);
+        process.stdout.write(`Number of students in ${key}: ${nameField[key].length}. List: ${nameField[key].join(',')}\n`);
       }
     } 
   } catch (error) {
