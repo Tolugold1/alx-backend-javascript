@@ -4,11 +4,12 @@ const countStudents = (path) => {
   const promise = new Promise((resolve, reject) => {
     fs.readFile(path, 'utf-8', (err, data) => {
       if (err) {
-        reject(Error('Cannot load the database'));
+        reject(new Error('Cannot load the database'));
       }
-      const messages = [];
-      const dt = data.toString().split('\n').slice(1, data.length);
-      const msg1 = `Number of students: ${dt.length}`;
+      const messages = []; 
+      const dt = data.split('\n');
+      const dt1 = dt.slice(1, dt.length);
+      const msg1 = `Number of students: ${dt1.length}`;
       console.log(msg1);
       messages.push(msg1);
       const obj = {};
