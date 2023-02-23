@@ -17,7 +17,7 @@ const countStudents = (path) => {
       if (key) {
         process.stdout.write(`Number of students in ${key}: ${nameField[key].length}. List: ${nameField[key].join(', ')}\n`);
       }
-    } 
+    }
   } catch (error) {
     throw new Error('Cannot load the database');
   }
