@@ -13,7 +13,7 @@ const countStudents = (path) => {
       console.log(msg1);
       messages.push(msg1);
       const obj = {};
-      for (const row of dtt) {
+      for (const row of dt) {
         const student = row.split(',');
         if (!obj[student[3]]) {
           obj[student[3]] = [];
