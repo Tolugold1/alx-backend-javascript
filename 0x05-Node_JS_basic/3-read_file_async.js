@@ -21,7 +21,7 @@ const countStudents = (path) => {
       }
       for (const key of Object.keys(obj)) {
         if (key) {
-          const msg2 = `Number of students in ${key}: ${obj[key].length}. List: ${obj[key].join(', ')}\n`;
+          const msg2 = `Number of students in ${key}: ${obj[key].length}. List: ${obj[key].join(', ')}`;
           console.log(msg2);
           messages.push(msg2);
         }
