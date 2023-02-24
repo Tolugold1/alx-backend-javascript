@@ -20,4 +20,7 @@ describe('check for rounded values', () => {
     const a3 = calculateNumber(-1, 1);
     assert.equal(a3, 0);
   });
+  it("check if arguments is a number or not", () => {
+    assert.equal(isNaN(calculateNumber(1.2)), true)
+  })
 });
