@@ -21,6 +21,7 @@ describe('check for rounded values', () => {
     assert.equal(a3, 0);
   });
   it("check if arguments is a number or not", () => {
-    assert.equal(isNaN(calculateNumber(1.2)), true)
+    assert.equal(isNaN(calculateNumber(1.2)), true);
+    assert.strictEqual(isNaN(calculateNumber()), true);
   })
 });
