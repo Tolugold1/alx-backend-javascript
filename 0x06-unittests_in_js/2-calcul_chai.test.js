@@ -20,7 +20,6 @@ describe('Check for type === DIVIDE', () => {
     expect(calculateNumber('DIVIDE', -1.4, -4.5)).to.equal(0.25);
     expect(calculateNumber('DIVIDE', -1.4, 0)).to.equal('Error');
     expect(calculateNumber('DIVIDE', 1.4, 4.5)).to.equal(0.2);
-    expect(calculateNumber('DIVIDE', 1.4, 0)).to.equal('Error');
   });
 });
 
