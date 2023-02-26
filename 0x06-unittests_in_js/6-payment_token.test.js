@@ -4,7 +4,7 @@ const expect = chai.expect;
 
 describe('testing getPaymentTokenFromAPI', () => {
   it("should check asyn func getPaymentTokenFromAPI", (done) => {
-    getPaymentTokenFromAPI.getPaymentTokenFromAPI(true)
+    getPaymentTokenFromAPI(true)
     .then((response) => {
       expect(response).to.include({data: 'Successful response from the API' });
     done()
